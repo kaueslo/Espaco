@@ -2,6 +2,7 @@ import React from "react";
 import open from '../open.png'
 import favorito from '../favorito.png'
 
+//É uma boa prática criar cards separados quando o componente for mto grande
 export default function Cards({fotos, styles}) {
   return (
     <ul className={styles.galeria__cards}>

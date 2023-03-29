@@ -4,6 +4,7 @@ import Menu from "../../componentes/Menu";
 import styles from './PaginaInicial.module.scss'
 import Rodape from '../../componentes/Rodape/Index';
 import Galeria from '../../componentes/Galeria';
+import Populares from '../../componentes/Populares';
 
 //Essa Tag aberta e fechando sem nada, é um Fragment, um elemento pai
 export default function PaginaInicial(){
@@ -18,10 +19,11 @@ export default function PaginaInicial(){
                         <img src={banner} alt="A imagem da terra vista do espaço" />
                     </div>
                 </section>
+                <div className={styles.galeria}>
+                    <Galeria />
+                    <Populares />
+                </div>
             </main>
-            <div>
-                <Galeria />
-            </div>
             <Rodape />
         </>
     )
